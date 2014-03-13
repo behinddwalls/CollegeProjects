@@ -1,0 +1,289 @@
+@CHARSET "ISO-8859-1";
+
+html {
+	color: rgb(109, 109, 109);
+	min-width: 1024px;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.2em;
+	border-bottom: 1px dotted #6b9ef1;
+	color: green;
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	text-decoration: none;
+	border-bottom: 1px solid red;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	width: auto;
+	min-width: 1024px;
+	height: 100%;
+	min-height: 620px;
+	overflow: auto;
+	border: 1px solid black;
+	margin: 0;
+	font-family: BentonSans, "Lucida Sans", "Lucida Grande", sans-serif;
+}
+
+#header {
+	position: relative;
+	height: 80px;
+	width: auto;
+	margin: 0px;
+	background-color: rgba(20, 0, 255, 0.55);
+	color: rgb(237, 243, 195);
+}
+
+#department { /*float: none;*/
+	text-align: center;
+	padding-top: 10px;
+	font-size: 18px;
+	margin-top: auto;
+	margin-left: auto;
+}
+
+#top-nav {
+	right: 16%;
+	margin-top: 20px;
+	position: absolute;
+}
+
+#top-nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	border-left: 1px solid rgba(0, 0, 0, 0.28);
+}
+
+#top-nav li {
+	float: left;
+	padding: 5px;
+	border-right: 1px solid rgba(0, 0, 0, 0.28);
+	font-size: 20px;
+}
+
+#logo {
+	width: 150px;
+	border: 0px solid rgba(0, 0, 0, 0.28);
+	height: 70px;
+	margin: 4px;
+	float: left;
+	margin-left:10px;
+}
+
+#search {
+	float: right;
+	margin-right: 10px;
+	width: 200px;
+	margin-top: 20px;
+	overflow: auto;
+}
+
+#searchForm #searchField {
+	width: 190px;
+	color: #949494;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 13px;
+	border: 1px solid #cecece;
+	float: right;
+	padding: 5px;
+}
+
+#searchForm #searchSend {
+	background: rgb(196, 115, 115);
+	color: #fff;
+	width: 70px;
+	font-weight: 700;
+	font-style: normal;
+	border: 0;
+	cursor: pointer;
+	float: right;
+	padding: 3px;
+}
+
+#middle {
+	width: auto;
+	min-width: 200px;
+	min-height: 500px;
+	margin: 0;
+	border: 1px solid rgba(0, 0, 0, 0.28);
+	background: rgb(237, 243, 195);
+	padding: 0px 0px 5px 0px;
+	height: 100%;
+	overflow-y: auto;
+	height: 100%;
+}
+
+#left-panel {
+	width: 200px;
+	min-height: 500px;
+	border: 0px solid rgba(0, 0, 0, 0.28);
+	float: left;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+}
+
+#right-panel {
+	min-height: 500px;
+	border-left: 1px solid rgba(0, 0, 0, 0.28);;
+	margin-right: 0px;
+	margin-left: 205px;
+	height: 100%;
+	overflow: auto;
+}
+
+#load {
+	margin: 10px 10px;
+	border: 1px solid gray;
+	padding: 5px;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+#left-panel .out-ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0px;
+	cursor: pointer;
+	cursor: hand;
+}
+
+#left-panel .out-li {
+	padding-left: 18px;
+	margin-top: 3px;
+	font-size: 16px;
+	background-color: rgba(192, 194, 152, 0.83);
+	color: rgba(255, 0, 0, 0.81);
+	text-transform: uppercase;
+}
+
+#left-panel .in-li {
+	list-style: none;
+	padding: 3px 3px 3px 20px;
+	margin-left: 10px;
+	display: none;
+	background: rgb(154, 155, 147);
+	border-top: 1px solid rgb(165, 165, 165);
+	color: white;
+	font-size: 13px;
+}
+
+#side-nav {
+	background: rgb(241, 111, 111);
+	text-align: center;
+	padding: 4px;
+	font-size: 17px;
+	color: white;
+	border: 1px solid black;
+}
+
+#top_nav {
+	background-color: rgb(218, 147, 83);
+}
+
+#top_nav table,th {
+	border: 1px solid black;
+	text-align: center;
+	background-color: rgb(218, 147, 83);
+}
+
+#top_nav table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#footer {
+	height: 70px;;
+	width: 100%;
+	background-color: rgba(20, 0, 255, 0.55);
+	text-align: center;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table,th,td {
+	border: 1px solid black;
+	text-align: center;
+	padding: 2px;
+}
+
+.table th {
+	background-color: rgb(218, 179, 145);
+}
+
+.buttonType {
+	background: gray;
+	width: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+}
+
+#customPopup {
+	z-index: 100;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	border: 1px solid gray;
+	box-shadow: 2px 2px 3px #aaaaaa;
+	padding: 0;
+	left: 0;
+	right: 0;
+	width: 80%;
+	min-width: 800px;
+	top: 10px;
+	background-color: rgb(237, 243, 195);
+	min-height: 300px;
+	display: none;
+	overflow: hidden;
+}
+
+#backShadow {
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+	left: 0;
+	height: 100%;
+	top: 0;
+	background-color: rgba(32, 32, 32, 0.48);
+	display: none;
+}
+
+#showComplain {
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	left: 0;
+	right: 0;
+	width: 80%;
+	
+}
+
+#showComplain h2 {
+	text-align: center;
+}
+input .fccss{
+width:20px;
+}
+

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+    xmlns="http://www.springframework.org/schema/beans"
+    xsi:schemaLocation="
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/util
+http://www.springframework.org/schema/util/spring-util-2.0.xsd
+http://cxf.apache.org/jaxrs
+http://cxf.apache.org/schemas/jaxrs.xsd" >
+
+    <import resource="classpath:META-INF/cxf/cxf.xml" />
+
+    <import resource="classpath*:META-INF/cxf/cxf-extension-*.xml" />
+
+    <import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
+
+    <jaxrs:server
+        id="profileService"
+        address="/profile" >
+
+        <jaxrs:serviceBeans>
+
+            <ref local="profile" />
+        </jaxrs:serviceBeans>
+
+        <jaxrs:extensionMappings>
+
+            <entry
+                key="json"
+                value="application/json" />
+        </jaxrs:extensionMappings>
+    </jaxrs:server>
+    
+    <jaxrs:server
+        id="SMSService"
+        address="/sms" >
+
+        <jaxrs:serviceBeans>
+
+            <ref local="sms" />
+        </jaxrs:serviceBeans>
+
+        <jaxrs:extensionMappings>
+
+            <entry
+                key="json"
+                value="application/json" />
+        </jaxrs:extensionMappings>
+    </jaxrs:server>
+    
+     <jaxrs:server
+        id="policeService"
+        address="/police" >
+
+        <jaxrs:serviceBeans>
+
+            <ref local="police" />
+        </jaxrs:serviceBeans>
+
+        <jaxrs:extensionMappings>
+
+            <entry
+                key="json"
+                value="application/json" />
+        </jaxrs:extensionMappings>
+    </jaxrs:server>
+    
+     <jaxrs:server
+        id="uploadService"
+        address="/upload" >
+
+        <jaxrs:serviceBeans>
+
+            <ref local="upload" />
+        </jaxrs:serviceBeans>
+
+        <jaxrs:extensionMappings>
+
+            <entry
+                key="json"
+                value="application/json" />
+        </jaxrs:extensionMappings>
+    </jaxrs:server>
+    
+    <jaxrs:server
+        id="criminalService"
+        address="/crime" >
+
+        <jaxrs:serviceBeans>
+
+            <ref local="crime" />
+        </jaxrs:serviceBeans>
+
+        <jaxrs:extensionMappings>
+
+            <entry
+                key="json"
+                value="application/json" />
+        </jaxrs:extensionMappings>
+    </jaxrs:server>
+    
+    
+    
+    
+    
+    
+
+
+
+ <jaxrs:server
+        id="trafficControllerService"
+        address="/trafficController" >
+
+        <jaxrs:serviceBeans>
+
+            <ref local="trafficController" />
+        </jaxrs:serviceBeans>
+
+        <jaxrs:extensionMappings>
+
+            <entry
+                key="json"
+                value="application/json" />
+        </jaxrs:extensionMappings>
+    </jaxrs:server>
+    
+  <jaxrs:server
+        id="trafficService"
+        address="/traffic" >
+
+        <jaxrs:serviceBeans>
+
+            <ref local="traffic" />
+        </jaxrs:serviceBeans>
+
+        <jaxrs:extensionMappings>
+
+            <entry
+                key="json"
+                value="application/json" />
+        </jaxrs:extensionMappings>
+    </jaxrs:server>
+
+    <jaxrs:server
+        id="testService"
+        address="/2" >
+
+        <jaxrs:serviceBeans>
+
+            <ref local="test" />
+        </jaxrs:serviceBeans>
+
+        <jaxrs:extensionMappings>
+
+            <entry
+                key="json"
+                value="application/json" />
+        </jaxrs:extensionMappings>
+    </jaxrs:server>
+
+  
+
+    <bean
+        id="test"
+        class="com.law.order.controller.Sample" />
+
+    <bean
+        id="profile"
+        class="com.law.order.controller.CitizenController" />
+        
+        <bean
+        id="traffic"
+        class="com.law.order.controller.LoginController" />
+
+  <bean
+        id="trafficController"
+        class="com.law.order.controller.TrafficController" />
+        
+        <bean
+        id="upload"
+        class="com.law.order.controller.UploadController" />
+        
+        <bean
+        id="police"
+        class="com.law.order.controller.PoliceController" />
+        
+           <bean
+        id="sms"
+        class="com.law.order.service.SMSService" />
+        
+         <bean
+        id="crime"
+        class="com.law.order.controller.CriminalController" />
+
+       
+
+    
+
+</beans>

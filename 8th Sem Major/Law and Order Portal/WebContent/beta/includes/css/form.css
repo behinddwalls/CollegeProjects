@@ -1,0 +1,131 @@
+@CHARSET "ISO-8859-1";
+
+h1 {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.2em;
+	border-bottom: 1px dotted #6b9ef1;
+	color: green;
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+form {
+	padding: 0 10px 10px;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 14px;
+	font-size: 12px;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	cursor: default;
+	overflow: visible;
+}
+
+label {
+	display: inline-block;
+	color: #705050;
+	font-weight: 700;
+	line-height: 1.4em;
+	text-align: left;
+	width: 180px;
+}
+
+#complainForm label {
+	display: block;
+	color: #705050;
+	font-weight: 700;
+	line-height: 1.4em;
+	text-align: left;
+	width: 180px;
+}
+
+#complainForm div {
+	margin-bottom: 10px;
+}
+
+textarea {
+	width: 500px;
+	height: 400px;
+	padding: 6px;
+	color: #adaeae;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-style: italic;
+	font-size: 13px;
+	border: 1px solid #cecece;
+}
+
+input {
+	width: 220px;
+	padding: 6px;
+	color: #949494;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 13px;
+	border: 1px solid #cecece;
+}
+
+#send {
+	background: #6f9ff1;
+	color: #fff;
+	width: auto;
+	font-weight: 700;
+	font-style: normal;
+	border: 0;
+	cursor: pointer;
+	text-align: center;
+}
+
+button #cancel {
+	background: #6f9ff1;
+	color: #fff;
+	width: auto;
+	font-weight: 700;
+	font-style: normal;
+	border: 0;
+	cursor: pointer;
+	text-align: center;
+}
+
+input.error {
+	background: #f8dbdb;
+	border-color: #e77776;
+}
+
+select.error {
+	background: #f8dbdb;
+	border-color: #e77776;
+}
+
+textarea.error {
+	background: #f8dbdb;
+	border-color: #e77776;
+}
+
+span {
+	margin-left: 10px;
+	color: #b1b1b1;
+	font-size: 12px;
+	font-style: italic;
+}
+
+span.error {
+	color: #e46c6e;
+}
+
+#send:hover {
+	background: #79a7f1;
+}
+
+#back {
+	background: rgb(241, 158, 111);
+	color: #fff;
+	width: 100px;
+	font-weight: 700;
+	font-style: normal;
+	border: 0;
+	cursor: pointer;
+	text-align: center;
+	padding: 6px;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 13px;
+}

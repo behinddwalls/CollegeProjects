@@ -1,0 +1,45 @@
+@CHARSET "ISO-8859-1";
+.profile-pic {
+	border-right: 1px solid #cecece;
+	padding: 5px;
+	width: 180px;
+	text-align: center;
+	height: 400px;
+	float:left;
+}
+#picForm input {
+	width: 170px;
+	padding: 0px;
+	color: #949494;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 13px;
+	border: 1px solid #cecece;
+}
+
+#picForm #send {
+	background: #6f9ff1;
+	color: #fff;
+	width: 100px;
+	font-weight: 700;
+	font-style: normal;
+	border: 0;
+	cursor: pointer;
+	padding: 5px;
+}
+
+.profile-pic #picImg {
+	width: 150px;
+	height: 180px;
+}
+#edit{
+background: rgb(241, 111, 111);
+color: #fff;
+width: 100px;
+font-weight: 700;
+font-style: normal;
+border: 0;
+cursor: pointer;
+padding: 5px;
+margin-left: auto;
+margin-right: auto;
+}

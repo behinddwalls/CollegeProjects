@@ -1,0 +1,246 @@
+@CHARSET "UTF-8";
+/******* GENERAL RESET ******
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend
+	{
+	border: 0pt none;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0pt;
+	padding: 0pt;
+	vertical-align: baseline;
+}
+*/
+.clear {
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	display: block;
+}
+
+a {
+	text-decoration: none;
+}
+
+strong {
+	font-weight: 700;
+}
+/******* GENERAL RESET *******/
+h1 {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.2em;
+	border-bottom: 1px dotted #6b9ef1;
+	color: green;
+	margin-bottom: 1em;
+	text-align: center;
+}
+/******* LOGO *******/
+#logo {
+	margin-top: .5em;
+	margin-bottom: 1em;
+	display: block; //
+	border: 1px solid;
+}
+/******* /LOGO  *******/
+/******* CONTAINER *******/
+
+/******* /CONTAINER *******/
+/******* FORM *******/
+#customForm {
+	padding: 0 10px 10px;
+	width: auto;
+	margin-left: 200px;
+	margin-right: auto;
+	line-height: 14px;
+	font-size: 12px;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	cursor: default;
+	overflow: visible;
+}
+
+#customForm label {
+	display: inline-block;
+	color: #705050;
+	font-weight: 700;
+	line-height: 1.4em;
+	text-align: left;
+	width: 180px;
+}
+
+#customForm input {
+	width: 220px;
+	padding: 6px;
+	color: #949494;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 13px;
+	border: 1px solid #cecece;
+}
+
+#customForm select {
+	width: 235px;
+	padding: 6px;
+	color: #949494;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 13px;
+	border: 1px solid #cecece;
+}
+
+#customForm input.error {
+	background: #f8dbdb;
+	border-color: #e77776;
+}
+
+#customForm select.error {
+	background: #f8dbdb;
+	border-color: #e77776;
+}
+
+#customForm textarea {
+	width: 228px;
+	height: 20px;
+	padding: 6px;
+	color: #adaeae;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-style: italic;
+	font-size: 13px;
+	border: 1px solid #cecece;
+}
+
+#customForm textarea.error {
+	background: #f8dbdb;
+	border-color: #e77776;
+}
+
+#customForm div {
+	margin-bottom: 15px;
+}
+
+#customForm div span {
+	margin-left: 10px;
+	color: #b1b1b1;
+	font-size: 12px;
+	font-style: italic;
+}
+
+#customForm div span.error {
+	color: #e46c6e;
+}
+
+#customForm #send {
+	background: #6f9ff1;
+	color: #fff;
+	width: 100px;
+	font-weight: 700;
+	font-style: normal;
+	border: 0;
+	cursor: pointer;
+	margin-left: 185px;
+}
+
+#customForm #cancel {
+	background: rgb(241, 158, 111);
+	color: #fff;
+	width: 100px;
+	font-weight: 700;
+	font-style: normal;
+	border: 0;
+	cursor: pointer;
+	text-align: center;
+	padding: 6px;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+#customForm #send:hover {
+	background: #79a7f1;
+}
+
+#error {
+	margin-bottom: 20px;
+	border: 1px solid #efefef;
+}
+
+#error ul {
+	list-style: square;
+	padding: 5px;
+	font-size: 13px;
+}
+
+#error ul li {
+	list-style-position: inside;
+	line-height: 1.6em;
+}
+
+#error ul li strong {
+	color: #e46c6d;
+}
+
+#error.valid ul li strong {
+	color: #93d72e;
+}
+/******* /FORM *******/
+
+/** PIC FORM ****/
+.profile-pic {
+	border-right: 1px solid #cecece;
+	padding: 5px;
+	width: 180px;
+	text-align: center;
+	height: 400px;
+}
+
+#picForm input {
+	width: 170px;
+	padding: 0px;
+	color: #949494;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 13px;
+	border: 1px solid #cecece;
+}
+
+#picForm #send {
+	background: #6f9ff1;
+	color: #fff;
+	width: 100px;
+	font-weight: 700;
+	font-style: normal;
+	border: 0;
+	cursor: pointer;
+	padding: 5px;
+}
+
+.profile-pic #picImg {
+	width: 150px;
+	height: 180px;
+}
+
+#idForm {
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 50px;
+	border: 1px solid silver;
+}
+
+#file {
+	width: 300px;
+	padding: 0px;
+	color: #949494;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 13px;
+	border: 1px solid #cecece;
+	height:30px;
+}
+
+#idForm #send {
+	background: #6f9ff1;
+	color: #fff;
+	width: 200px;
+	font-weight: 700;
+	font-style: normal;
+	border: 0;
+	cursor: pointer;
+	padding: 5px;
+}
